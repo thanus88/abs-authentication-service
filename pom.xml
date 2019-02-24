@@ -9,16 +9,16 @@
 	</parent>
 	
 	<groupId>com.abs.corp.services</groupId>
-	<artifactId>abs-corp-services</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>ABS Corp Services</name>
+	<artifactId>abs-authentication-service</artifactId>
+	<version>0.1</version>
+	<name>abs-authentication-service</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<docker.image.prefix>springio</docker.image.prefix>
+		<docker.image.prefix>thanusanla</docker.image.prefix>
 	</properties>
 
 	<dependencies>
@@ -39,18 +39,32 @@
 
 	<build>
 		<plugins>
-		<!-- 	<plugin>
+		 	<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>  -->
+			</plugin>
 			<plugin>
-	            <groupId>com.spotify</groupId>
-	            <artifactId>dockerfile-maven-plugin</artifactId>
-	            <version>1.4.9</version>
-	            <configuration>
-	                <repository>${docker.image.prefix}/${project.artifactId}</repository>
-	            </configuration>
-	        </plugin>
+			  <groupId>com.spotify</groupId>
+			  <artifactId>dockerfile-maven-plugin</artifactId>
+			  <version>1.4.4</version>
+			  <configuration>
+			    <repository>${docker.image.prefix}/${project.name}</repository>
+			    <tag>${project.version}</tag>
+			    <buildArgs>
+			      <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+			    </buildArgs>
+			  </configuration>
+			  <executions>
+			    <execution>
+			      <id>default</id>
+			      <phase>install</phase>
+			      <goals>
+			        <goal>build</goal>
+			        <goal>push</goal>
+			      </goals>
+			    </execution>
+			  </executions>
+			</plugin>
 		<!-- 	<plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>appengine-maven-plugin</artifactId>
