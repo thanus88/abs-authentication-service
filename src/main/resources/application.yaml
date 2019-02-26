@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mongoDBUser:<PASSWORD>@cluster-mongodb-shard-00-00-homte.gcp.mongodb.net:27017,cluster-mongodb-shard-00-01-homte.gcp.mongodb.net:27017,cluster-mongodb-shard-00-02-homte.gcp.mongodb.net:27017/test?ssl=true&replicaSet=Cluster-MongoDB-shard-0&authSource=admin&retryWrites=true
