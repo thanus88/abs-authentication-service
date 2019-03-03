@@ -3,11 +3,12 @@ runtime: java8
 env: standard
 runtime_config:
   jdk: openjdk8
-#env_variables:
-#  SPRING_PROFILES_ACTIVE: "gcp"
+env_variables: 
+  SPRING_PROFILES_ACTIVE: "staging"
 handlers:
-- url: /.*
-  script: this field is required, but ignored
+- url: /*
+  script: auto
+  
 #manual_scaling: 
 #  instances: 1
 # Application Resources
