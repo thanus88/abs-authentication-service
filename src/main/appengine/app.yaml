@@ -1,15 +1,15 @@
-service: abs-authentication-service
-runtime: java
+service: abs-authen-service
+runtime: java8
 env: standard
 runtime_config:
   jdk: openjdk8
-env_variables:
-  SPRING_PROFILES_ACTIVE: "gcp"
+#env_variables:
+#  SPRING_PROFILES_ACTIVE: "gcp"
 handlers:
 - url: /.*
   script: this field is required, but ignored
-manual_scaling: 
-  instances: 1
+#manual_scaling: 
+#  instances: 1
 # Application Resources
 #resources:
 #  cpu: 1
