@@ -1,16 +1,16 @@
-service: abs-authen-service
+#service: abs-authen-service
 runtime: java8
 env: standard
 runtime_config:
   jdk: openjdk8
-env_variables: 
-  SPRING_PROFILES_ACTIVE: "staging"
+#env_variables: 
+#  SPRING_PROFILES_ACTIVE: "staging"
 handlers:
-- url: /*
-  script: auto
-  
-#manual_scaling: 
-#  instances: 1
+- url: /.*
+  script: index.html
+   
+manual_scaling: 
+  instances: 1
 # Application Resources
 #resources:
 #  cpu: 1
