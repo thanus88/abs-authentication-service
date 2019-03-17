@@ -11,6 +11,10 @@ public class Customer {
 	
 	@Id
     private String id;
+	@NotNull
+    private String userName;
+    @NotNull
+    private String password;
     @NotNull
     private String firstName;
     @NotNull
@@ -82,6 +86,17 @@ public class Customer {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
-
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 }
