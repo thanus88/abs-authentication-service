@@ -1,6 +1,6 @@
 #service: abs-authen-service
 runtime: java
-env: flex
+env: standard
 runtime_config:
   jdk: openjdk8
 #env_variables: 
