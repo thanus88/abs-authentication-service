@@ -80,7 +80,7 @@
 			  </executions>
 			</plugin>
 			-->
-			<!--
+			
 		 	<plugin>
 		     <groupId>com.google.cloud.tools</groupId>
 		     <artifactId>appengine-maven-plugin</artifactId>
@@ -90,11 +90,10 @@
 		       <appEngineDirectory>${basedir}</appEngineDirectory>
 		       <project>abs-authen-services</project>
 		       <version>1</version>
-		       
- 		       <cloudSdkPath>/usr/foo/path/to/cloudsdk</cloudSdkPath>
+ 		      <!-- <cloudSdkPath>/usr/foo/path/to/cloudsdk</cloudSdkPath> -->
 		     </configuration>
 		  </plugin>
-              -->
+              
 		</plugins>
 	</build>
 
