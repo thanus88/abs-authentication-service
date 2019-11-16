@@ -86,8 +86,8 @@
 				<artifactId>appengine-maven-plugin</artifactId>
 				<version>2.1.0</version>
 				<configuration>
-					<version>1</version>
-					<projectId>starter-1362</projectId>
+					<version>5</version>
+					<projectId>Starter</projectId>
 				</configuration>
 			</plugin>
               
