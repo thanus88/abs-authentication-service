@@ -88,7 +88,7 @@
 		     <configuration>
 		       <deploy.stopPreviousVersion>true</deploy.stopPreviousVersion>
 		       <appEngineDirectory>${basedir}</appEngineDirectory>
-		       <project>abs-authen-services</project>
+		       <project>starter-1362</project>
 		       <version>1</version>
  		      <!-- <cloudSdkPath>/usr/foo/path/to/cloudsdk</cloudSdkPath> -->
 		     </configuration>
