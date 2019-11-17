@@ -3,8 +3,6 @@ runtime: java
 env: flex
 runtime_config:
   jdk: openjdk8
-service: abs-authen-service
-version: v2
 #env_variables: 
 #  SPRING_PROFILES_ACTIVE: "staging"
 handlers:
