@@ -87,6 +87,7 @@
 				<version>2.1.0</version>
 				<configuration>
 					<projectId>abs-authen-services</projectId>
+					<version>GCLOUD_CONFIG</version>
 				</configuration>
 			</plugin>
               
