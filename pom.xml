@@ -85,6 +85,9 @@
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>appengine-maven-plugin</artifactId>
 				<version>2.1.0</version>
+				<configuration>
+					<projectId>abs-authen-services</projectId>
+				</configuration>
 			</plugin>
               
 		</plugins>
