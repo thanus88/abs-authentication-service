@@ -1,4 +1,4 @@
-#service: abs-authen-service
+service: abs-authen-services
 runtime: java
 env: flex
 runtime_config:
