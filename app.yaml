@@ -1,35 +1,17 @@
-service: abs-authen-services
+service: default
+
 runtime: java
 env: flex
+
 runtime_config:
   jdk: openjdk8
-#env_variables: 
-#  SPRING_PROFILES_ACTIVE: "staging"
+
 handlers:
 - url: /.*
-  script: index.html
-   
-manual_scaling: 
+  script: this field is required, but ignored
+
+manual_scaling:
   instances: 1
-liveness_check:
-  path: "/liveness_check"
-  check_interval_sec: 30
-  timeout_sec: 4
-  failure_threshold: 2
-  success_threshold: 2  
-# Application Resources
-#resources:
-#  cpu: 1
-#  memory_gb: 1
-#  disk_size_gb: 1
-#  volumes:
-#  - name: ramdisk1
-#    volume_type: tmpfs
-#    size_gb: 0.5
-# Automatic Scaling
-#automatic_scaling: 
-#  min_num_instances: 1 
-#  max_num_instances: 2 
-#  cool_down_period_sec: 180 
-#  cpu_utilization: 
-#    target_utilization: 0.6
+
+health_check:
+  enable_health_check: False
